@@ -1,0 +1,37 @@
+.contenedor{
+    height: 80vw;
+    width: 80vw;
+    display:flex ;
+    background-color: grey;
+
+}
+.elementos{
+    flex-grow: 1;
+    display: flex;
+    gap: 0.5rem;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.item{
+    font-size: 2rem;
+    background-color: black;
+    color: grey;
+    border: solid 1px grey;
+}
+.principal{
+    display: flex;
+    flex-grow: 3;
+}
+
+@media(min-height: 640px){
+    .elementos{
+    flex-direction: row;
+    display: flex;
+    height: 3rem;
+    align-self: flex-end;
+    justify-content: center;
+    margin: 2%;
+    }
+
+}
